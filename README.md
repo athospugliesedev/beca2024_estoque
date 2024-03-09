@@ -31,6 +31,12 @@ responder as seguintes perguntas:
 ![MicrosoftTeams-image](https://github.com/athospugliesedev/beca2024_estoque/assets/118693085/7faaab80-cfc7-4d4e-99f6-68539ca18f14)
 
 ### Modelagem dos dados
+![Modelagem](https://github.com/athospugliesedev/beca2024_estoque/assets/118693085/7a66ce36-79fd-4e37-880c-41183048b90d)
+
+### Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
 
 ### Equipe 👨‍💻
 - [Athos Pugliese](https://www.github.com/athospugliesedev)
@@ -39,4 +45,4 @@ responder as seguintes perguntas:
 - [Jaqueline Lins](https://www.github.com/)
 - [Lucas Silva ](https://www.github.com/)
 
-  
+![Logo Global NTT DATA Future Blue RGB](https://github.com/athospugliesedev/beca2024_estoque/assets/118693085/4789b076-bccb-4dcb-8e4a-2f8c6f0883d7)
