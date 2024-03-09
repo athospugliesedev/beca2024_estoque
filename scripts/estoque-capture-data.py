@@ -52,7 +52,7 @@ job = Job(glueContext)
 job.init(args['JOB_NAME'], args)
 print("Job name is:".format(args["JOB_NAME"]))
 
-credential = "xg3O4ANJSWzz+ZVotwQ3KqGwth0h4ASmm62PIxlKiFs6CSnp1suNA28tHKw18iD+AYVNrAirYzQJ+AStMDq9FA=="
+credential = credential
 service = BlobServiceClient(account_url="https://projetointegrado2024.blob.core.windows.net/", credential=credential)
 
 blob_list_container1 = service.get_container_client("estoque").list_blobs()
