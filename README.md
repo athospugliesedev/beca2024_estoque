@@ -28,6 +28,7 @@ responder as seguintes perguntas:
 3. Qual o top 5 dos produtos que mais demoram para sair?
 
 ### Arquitetura Final
+![MicrosoftTeams-image](https://github.com/athospugliesedev/beca2024_estoque/assets/118693085/7faaab80-cfc7-4d4e-99f6-68539ca18f14)
 
 ### Modelagem dos dados
 
@@ -37,3 +38,5 @@ responder as seguintes perguntas:
 - [Guilherme Rodrigues](https://www.github.com/)
 - [Jaqueline Lins](https://www.github.com/)
 - [Lucas Silva ](https://www.github.com/)
+
+  
