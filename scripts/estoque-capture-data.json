@@ -1,0 +1,42 @@
+{
+  "name" : "estoque-capture-data",
+  "jobMode" : "SCRIPT",
+  "description" : "",
+  "role" : "arn:aws:iam::850202893763:role/Glue_Role_Beca_DnA_2024",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 1
+  },
+  "command" : {
+    "name" : "glueetl",
+    "scriptLocation" : "s3://aws-glue-assets-850202893763-us-east-1/scripts/estoque-capture-data.py",
+    "pythonVersion" : "3"
+  },
+  "defaultArguments" : {
+    "--enable-metrics" : "true",
+    "--extra-py-files" : "s3://pedidos-bronze/prefix/azure-storage-blob-12.19.0.zip",
+    "--spark-event-logs-path" : "s3://aws-glue-assets-850202893763-us-east-1/sparkHistoryLogs/",
+    "--enable-job-insights" : "false",
+    "credential" : "\"xg3O4ANJSWzz+ZVotwQ3KqGwth0h4ASmm62PIxlKiFs6CSnp1suNA28tHKw18iD+AYVNrAirYzQJ+AStMDq9FA==\"",
+    "--additional-python-modules" : "azure-storage-blob",
+    "--enable-observability-metrics" : "true",
+    "--enable-glue-datacatalog" : "true",
+    "--enable-continuous-cloudwatch-log" : "true",
+    "--job-bookmark-option" : "job-bookmark-disable",
+    "--job-language" : "python",
+    "--TempDir" : "s3://aws-glue-assets-850202893763-us-east-1/temporary/"
+  },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 10,
+  "timeout" : 2880,
+  "maxCapacity" : 10.0,
+  "glueVersion" : "4.0",
+  "numberOfWorkers" : 10,
+  "workerType" : "G.1X",
+  "executionClass" : "STANDARD",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "beca2024_estoque",
+    "branch" : "main",
+    "folder" : "scripts"
+  }
+}
