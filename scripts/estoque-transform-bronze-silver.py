@@ -27,16 +27,16 @@ df_normalized = df_bronze.withColumn("prod_id", F.col("prod_id").cast(IntegerTyp
                         .withColumn("data_hora", F.col("timestamp").cast(TimestampType())) \
                         .withColumn("nf_entrada", F.col("nf_entrada").cast(StringType()))
 
-# dropando a coluan truncado                        
+# dropando a coluna truncado                      
 df_drop = df_normalized.drop(F.col("truncado"))
 
-# Selecionando colunas
+# Selecionando colunas sem a coluna timestamp
 df_result = df_drop.select("prod_id","id_transacao", "qtd", "tipo_de_transacao", "saldo", "data_hora", "nf_entrada")
 
-# retirando duplicados
+# retirando linhas duplicados
 df_no_duplicates = df_result.dropDuplicates(["prod_id","id_transacao", "qtd", "tipo_de_transacao", "saldo", "data_hora", "nf_entrada"])
 
+# escrevendo dataframe
 database = "estoque"
 tabela = "silver"
-output_path = "s3://athosbucketimage/silver/"
 df_no_duplicates.write.insertInto(f"{database}.{tabela}",overwrite=True)
