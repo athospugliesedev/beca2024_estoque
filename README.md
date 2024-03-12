@@ -31,11 +31,11 @@ responder as seguintes perguntas:
 ![MicrosoftTeams-image](https://github.com/athospugliesedev/beca2024_estoque/assets/118693085/7faaab80-cfc7-4d4e-99f6-68539ca18f14)
 
 ### Modelagem dos dados
-![Modelagem](https://github.com/athospugliesedev/beca2024_estoque/assets/118693085/7a66ce36-79fd-4e37-880c-41183048b90d)
+![model](https://github.com/athospugliesedev/beca2024_estoque/assets/118693085/a77a658e-f5f9-40f9-8db7-36e0f756cc5b)
+
 
 ### Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![bi](https://github.com/athospugliesedev/beca2024_estoque/assets/118693085/daf545f7-65f0-40bf-99d7-c7f1cde983d0)
 
 
 ### Equipe 👨‍💻
