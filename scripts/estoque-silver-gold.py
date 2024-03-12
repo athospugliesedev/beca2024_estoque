@@ -35,7 +35,7 @@ df_produto_normalized = df_produto.withColumn("id_produto", F.col("id_produto").
 # # renomeando coluna do dataframe produtos
 df_produto = df_produto_normalized.withColumnRenamed("id_produto", "prod_id")
 
-# join estoque e produtos 
+# inner join estoque e produtos 
 result_df = df_silver.join(df_produto, on='prod_id', how='inner')
 
 # Selecionando as colunas para o dataframe final
@@ -52,6 +52,7 @@ result_df_normalized = result_df.withColumn("prod_id", F.col("prod_id").cast(Int
                         .withColumn("tipo_produto", F.col("tipo_produto").cast(StringType())) \
                         .withColumn("marca_produto", F.col("marca_produto").cast(StringType()))
 
+# escrevendo dataframe
 database = "estoque"
 tabela = "produto_estoque_gold"
 result_df_normalized.write.insertInto(f"{database}.{tabela}",overwrite=True)
